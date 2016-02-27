@@ -1,6 +1,6 @@
 /**
  * Created by tal avissar on 27/05/2014.
- *
+ * with ES6 impl
  * this is the main enterance file
  */
 const http = require('http');
@@ -8,11 +8,11 @@ const http = require('http');
 const hostname = '127.0.0.1';
 const port = 1337;
 
-http.createServer((req, res) = > {
+http.createServer((req, res) => {
     res.writeHead(200, {'Content-Type': 'text/plain'});
-res.end('Hello World\n');
+res.end('Hello Worldccc  axs\n');
 }).
-listen(port, hostname, () = > {
+listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 })
 ;
